@@ -10,4 +10,9 @@ public class Projectile : MonoBehaviour
     {
         transform.Translate(Vector2.right * shootSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D projectileCollider)
+    {
+        Debug.Log("Shooting at " + projectileCollider.name);
+    }
 }
