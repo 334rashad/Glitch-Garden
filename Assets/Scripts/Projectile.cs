@@ -16,6 +16,11 @@ public class Projectile : MonoBehaviour
     {
         var health = enemyCollider.GetComponent<Health>();
         var attacker = enemyCollider.GetComponent<Attacker>();
-        health.DealDamage(damage);
+
+        if (attacker & health)
+        {
+            health.DealDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }

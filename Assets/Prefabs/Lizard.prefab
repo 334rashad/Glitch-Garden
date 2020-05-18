@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5471317438603072366}
   - component: {fileID: 5471317438603072365}
   - component: {fileID: 5471317438603072367}
-  - component: {fileID: 5471317438603072360}
   - component: {fileID: -1940037709054522705}
   - component: {fileID: 4226847334405850715}
+  - component: {fileID: 5471317438603072360}
   - component: {fileID: 3251493810197665698}
   m_Layer: 0
   m_Name: Lizard
@@ -106,19 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5471317438603072360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5471317438603072364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebebdc58371081841b28b1751cf76d48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 1
 --- !u!50 &-1940037709054522705
 Rigidbody2D:
   serializedVersion: 4
@@ -166,6 +153,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46833706, y: 0.8471432}
   m_EdgeRadius: 0
+--- !u!114 &5471317438603072360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5471317438603072364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebebdc58371081841b28b1751cf76d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
 --- !u!114 &3251493810197665698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,3 +179,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  destroyVFX: {fileID: 98872376211390370, guid: d7121f170c29f304b865f72bf6ece928,
+    type: 3}
