@@ -24,5 +24,4 @@ public class Health : MonoBehaviour
         GameObject destroyVFXObject = Instantiate(destroyVFX, transform.position, transform.rotation);
         Destroy(destroyVFXObject, 2f);
     }
-
 }
