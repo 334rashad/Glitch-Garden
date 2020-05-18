@@ -7,13 +7,21 @@ public class DefenderSpawner : MonoBehaviour
     [SerializeField] GameObject defenderType;
     private void OnMouseDown()
     {
-        SpawnDefender();
+        SpawnDefender(GetMouseClickPosition());
     }
 
-    private void SpawnDefender()
+    private Vector2 GetMouseClickPosition()
     {
-        GameObject newDefender = Instantiate(defenderType, 
-            transform.position, 
+        Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
+        return worldPos;
+    }
+
+    private void SpawnDefender(Vector2 worldPos)
+    {
+
+        GameObject newDefender = Instantiate(defenderType,
+            worldPos, 
             Quaternion.identity) as GameObject;
     }
 }
