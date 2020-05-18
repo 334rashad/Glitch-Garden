@@ -17,6 +17,14 @@ public class DefenderSpawner : MonoBehaviour
         return worldPos;
     }
 
+    private Vector2 SnapToGrid(Vector2 rawWorldPos)
+    {
+        float posX = Mathf.RoundToInt(rawWorldPos.x);
+        float posY = Mathf.RoundToInt(rawWorldPos.y);
+        return new Vector2(posX, posY);
+    }
+
+
     private void SpawnDefender(Vector2 worldPos)
     {
 
