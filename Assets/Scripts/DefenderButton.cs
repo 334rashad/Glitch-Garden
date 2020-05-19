@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DefenderButton : MonoBehaviour
 {
+    [SerializeField] Defender defender;
     private void OnMouseDown()
     {
         var buttons = FindObjectsOfType<DefenderButton>();
