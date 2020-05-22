@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7847055917206292966}
   - component: {fileID: 1001317400}
+  - component: {fileID: 1204749142}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -45,6 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinCost: 100
+--- !u!114 &1204749142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847055917206292967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b25b332a77b99749be454289190bbc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 3798036665623504392, guid: 6a709a3fa0499d94abcdd991b2cff76a,
+    type: 3}
+  gun: {fileID: 3329339392719878112}
 --- !u!1001 &5609306500706158627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147,11 +163,19 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.41
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7200255259798618780, guid: 387bf3cccdf6446499ad9009bbe6c7fc, type: 3}
+    - {fileID: 7200255259798618781, guid: 387bf3cccdf6446499ad9009bbe6c7fc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 387bf3cccdf6446499ad9009bbe6c7fc, type: 3}
 --- !u!4 &3329339392162400928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7200255259798618755, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5609306500706158627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3329339392719878112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7200255260347678659, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
     type: 3}
   m_PrefabInstance: {fileID: 5609306500706158627}
   m_PrefabAsset: {fileID: 0}
