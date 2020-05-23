@@ -24,11 +24,11 @@ public class CoinsDisplay : MonoBehaviour
         UpdateDisplay();
     }
 
-    public void SpendCoins(int moreCoins)
+    public void SpendCoins(int someCoins)
     {
-        if (coins >= moreCoins)
+        if (coins >= someCoins)
         {
-            coins -= moreCoins;
+            coins -= someCoins;
             UpdateDisplay();
         }
     }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7847055917206292966}
   - component: {fileID: 1001317400}
   - component: {fileID: 1204749142}
+  - component: {fileID: 1204749141}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -61,6 +62,25 @@ MonoBehaviour:
   projectile: {fileID: 3798036665623504392, guid: 6a709a3fa0499d94abcdd991b2cff76a,
     type: 3}
   gun: {fileID: 3329339392719878112}
+--- !u!95 &1204749141
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847055917206292967}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24d39073fdfc88a4c93bf23af8386a8c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5609306500706158627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,6 +147,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200255259798618754, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.76148665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200255259798618754, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.6803133
       objectReference: {fileID: 0}
     - target: {fileID: 7200255259798618755, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
         type: 3}
