@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CoinsDisplay : MonoBehaviour
 {
-    [SerializeField] int coins = 100;
+    [SerializeField] int coins = 200;
     Text coinsText;
     private void Start()
     {
@@ -22,6 +22,11 @@ public class CoinsDisplay : MonoBehaviour
     {
         coins += moreCoins;
         UpdateDisplay();
+    }
+
+    public bool HaveEnoughCoins(int amount)
+    {
+        return coins >= amount;
     }
 
     public void SpendCoins(int someCoins)

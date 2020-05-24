@@ -7,7 +7,7 @@ public class DefenderSpawner : MonoBehaviour
     Defender defenderType;
     private void OnMouseDown()
     {
-        SpawnDefender(GetMouseClickPosition());
+        PlaceDefenderAt(GetMouseClickPosition());
     }
 
     public void SetDefender(Defender selected)
@@ -17,8 +17,13 @@ public class DefenderSpawner : MonoBehaviour
 
     private void PlaceDefenderAt(Vector2 gridPos)
     {
-        var StarDisplay = FindObjectOfType<CoinsDisplay>();
-        int defenderCost = defenderType.GetCoincost();
+        var coinsDisplay = FindObjectOfType<CoinsDisplay>();
+        int defenderCost = defenderType.GetCoinCost();
+        if(coinsDisplay.HaveEnoughCoins(defenderCost))
+        {
+            SpawnDefender(gridPos);
+            coinsDisplay.SpendCoins(defenderCost);
+        }
     }
 
     private Vector2 GetMouseClickPosition()

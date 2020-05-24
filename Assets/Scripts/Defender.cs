@@ -11,7 +11,7 @@ public class Defender : MonoBehaviour
         FindObjectOfType<CoinsDisplay>().AddCoins(coins);
     }
 
-    public int GetCoincost(int coins)
+    public int GetCoinCost()
     {
         return coinCost;
     }
