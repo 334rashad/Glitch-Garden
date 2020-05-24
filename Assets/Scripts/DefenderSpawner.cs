@@ -15,6 +15,12 @@ public class DefenderSpawner : MonoBehaviour
         defenderType = selected;
     }
 
+    private void PlaceDefenderAt(Vector2 gridPos)
+    {
+        var StarDisplay = FindObjectOfType<CoinsDisplay>();
+        int defenderCost = defenderType.GetCoincost();
+    }
+
     private Vector2 GetMouseClickPosition()
     {
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
