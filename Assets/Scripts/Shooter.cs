@@ -6,6 +6,7 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     [SerializeField] GameObject projectile, gun;
+    AttackerSpawner myLaneSpawner;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class Shooter : MonoBehaviour
     {
         if (AttackerIsComing())
         {
-            Debug.Log("Shoot! \n");
+            Debug.Log("Shoot!");
         } else
         {
             Debug.Log("Position clean");
@@ -25,12 +26,22 @@ public class Shooter : MonoBehaviour
 
     private void SetLaneSpawner()
     {
-        throw new NotImplementedException();
+        AttackerSpawner[] attSpawners = FindObjectsOfType<AttackerSpawner>();
+
+        foreach (AttackerSpawner spawner in attSpawners)
+        {
+            bool isOnSameLane = (Mathf.Abs(spawner.transform.position.y - 
+                transform.position.y) <= Mathf.Epsilon);
+            if (isOnSameLane) { 
+                myLaneSpawner = spawner;
+            }
+        }
+
     }
 
     private bool AttackerIsComing()
     {
-        throw new NotImplementedException();
+        return myLaneSpawner.transform.childCount > 0;
     }
 
     public void Fire()
