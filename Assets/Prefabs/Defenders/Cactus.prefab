@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1001317400}
   - component: {fileID: 1204749142}
   - component: {fileID: 1204749141}
+  - component: {fileID: 329970462}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7847055917206292967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9613256, y: 2.9485743, z: -2.1835938}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.9613256, y: 2.9485743, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 3329339392162400928}
   m_Father: {fileID: 0}
@@ -81,6 +82,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &329970462
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847055917206292967}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.019363761}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.99702096}
+  m_EdgeRadius: 0
 --- !u!1001 &5609306500706158627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,7 +218,12 @@ PrefabInstance:
     - target: {fileID: 7200255260347678656, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41
+      value: -0.389
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200255260347678656, guid: 387bf3cccdf6446499ad9009bbe6c7fc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.027
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7200255259798618780, guid: 387bf3cccdf6446499ad9009bbe6c7fc, type: 3}
