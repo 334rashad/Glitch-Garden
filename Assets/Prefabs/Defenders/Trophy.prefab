@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c63a627807222459387b0542fe1fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCost: 50
+  coinCost: 75
 --- !u!61 &878423646
 BoxCollider2D:
   m_ObjectHideFlags: 0

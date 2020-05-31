@@ -10,7 +10,7 @@ public class DefenderButton : MonoBehaviour
         var buttons = FindObjectsOfType<DefenderButton>();
         foreach(DefenderButton button in buttons)
         {
-            button.GetComponent<SpriteRenderer>().color = new Color32(87, 87, 87, 200);
+            button.GetComponent<SpriteRenderer>().color = new Color32(95, 95, 95, 255);
         }
         GetComponent<SpriteRenderer>().color = Color.white;
         FindObjectOfType<DefenderSpawner>().SetDefender(defenderPrefab);
