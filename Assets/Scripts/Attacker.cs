@@ -5,6 +5,7 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [Range(0f, 5f)] [SerializeField] float movementSpeed = 1f;
+    GameObject currentTarget;
 
     // Update is called once per frame
     void Update()
@@ -16,4 +17,11 @@ public class Attacker : MonoBehaviour
     {
         movementSpeed = speed;
     }
+
+    public void Attack(GameObject target)
+    {
+        GetComponent<Animator>().SetBool("isAttacking", true);
+        currentTarget = target;
+    }
+
 }
