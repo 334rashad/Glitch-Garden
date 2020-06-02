@@ -24,4 +24,10 @@ public class Attacker : MonoBehaviour
         currentTarget = target;
     }
 
+    public void StrikeCurrentTarget(float damage)
+    {
+        if (!currentTarget) return;
+        Health health = currentTarget.GetComponent<Health>();
+    }
+
 }
