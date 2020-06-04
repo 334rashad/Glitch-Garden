@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootSpeed: 5.3
-  damage: 150
+  damage: 70
 --- !u!95 &7591975237983831696
 Animator:
   serializedVersion: 3

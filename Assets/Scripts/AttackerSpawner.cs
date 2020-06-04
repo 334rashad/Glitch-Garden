@@ -25,13 +25,14 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        var attackerIndex = System.Random.Range(0, attackerTypeArray.Length);
+        var attackerIndex = UnityEngine.Random.Range(0, attackerTypeArray.Length);
+        Spawn(attackerTypeArray[attackerIndex]);
     }
 
     private void Spawn(Attacker nextAttacker)
     {
         Attacker newAttacker = Instantiate(
-                                attackerType,
+                                nextAttacker,
                                 transform.position,
                                 transform.rotation) as Attacker;
         newAttacker.transform.parent = transform;
