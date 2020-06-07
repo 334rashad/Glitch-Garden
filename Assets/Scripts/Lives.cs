@@ -25,5 +25,9 @@ public class Lives : MonoBehaviour
         // if (coins >= someCoins)
             lives -= damage;
             UpdateDisplay();
+        if(lives <= 0)
+        {
+
+        }
     }
 }
