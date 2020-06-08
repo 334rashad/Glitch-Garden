@@ -21,7 +21,9 @@ public class Projectile : MonoBehaviour
         {
             health.DealDamage(damage);
             Destroy(gameObject);
-        } else if(attacker) Destroy(gameObject);
+        }
+        else if (!(enemyCollider.GetComponent<Defender>()) & health) Destroy(gameObject);
+
     }
 }
    
