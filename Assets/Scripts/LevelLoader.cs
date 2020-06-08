@@ -31,6 +31,6 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLoosingScene()
     {
-        SceneManager.LoadScene("Loose Screen");
+        SceneManager.LoadScene("Lose Screen");
     }
 }
