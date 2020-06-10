@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    int numberOfAttackers = 0;
+    bool levelTimerFinished = false;
 
-    // Update is called once per frame
-    void Update()
+    public void AttackerSpawned()
     {
-        
+        numberOfAttackers++;
+    }
+    public void AttackerKilled()
+    {
+        numberOfAttackers--;
+        if(numberOfAttackers <= 0 )
+        {
+
+        }
     }
 }
