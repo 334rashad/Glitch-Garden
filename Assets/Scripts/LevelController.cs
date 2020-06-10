@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,9 +15,24 @@ public class LevelController : MonoBehaviour
     public void AttackerKilled()
     {
         numberOfAttackers--;
-        if(numberOfAttackers <= 0 )
+        if(numberOfAttackers <= 0 & levelTimerFinished)
         {
+            Debug.Log("End of Level");
+        }
+    }
 
+     public void LevelTimerFinished()
+    {
+        levelTimerFinished = true;
+        StopSpawners();
+    }
+
+    private void StopSpawners()
+    {
+        AttackerSpawner[] spawnerAray = FindObjectsOfType<AttackerSpawner>();
+        foreach (AttackerSpawner spawner in spawnerAray)
+        {
+            spawner.StopSpawning();
         }
     }
 }
