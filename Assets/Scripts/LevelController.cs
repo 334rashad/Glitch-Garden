@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject levelComplete;
-    [SerializeField] float waitToLoad = 2f;
+    [SerializeField] float waitToLoad = 3f;
     int numberOfAttackers = 0;
     bool levelTimerFinished = false;
 
@@ -49,5 +49,5 @@ public class LevelController : MonoBehaviour
         {
             spawner.StopSpawning();
         }
-    }
+    } 
 }
