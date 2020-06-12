@@ -41,6 +41,7 @@ public class LevelController : MonoBehaviour
     public void HandleGameOver()
     {
         gameOverMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void LevelTimerFinished()

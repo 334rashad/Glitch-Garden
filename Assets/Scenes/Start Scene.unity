@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 198313474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 920536415}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &198313474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +228,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.37254903, g: 0.3372549, b: 0.37254903, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -325,6 +337,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &920536414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15383005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.038814783
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.997559
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436928, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034127040505436940, guid: f6a0062829a7216449428234f3c801b2,
+        type: 3}
+      propertyPath: m_Name
+      value: Level Controller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6a0062829a7216449428234f3c801b2, type: 3}
+--- !u!114 &920536415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7034127040505436943, guid: f6a0062829a7216449428234f3c801b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 920536414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ac9cf26b4bfdd4c88d792c067914f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1535573496
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +536,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -662,6 +756,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.94117653, g: 0.94117653, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -729,4 +824,15 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2112808231}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 920536415}
+        m_MethodName: LoadNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
