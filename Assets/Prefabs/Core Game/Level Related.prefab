@@ -403,7 +403,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 862596989620485774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8914561292109897115}
+        m_MethodName: RestartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &862596989723005824
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +533,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 862596989723005827}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8914561292109897115}
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &862596990138693128
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelComplete: {fileID: 8914561293745881693}
   waitToLoad: 2
+  gameOver: {fileID: 862596989366005120}
 --- !u!82 &8914561292109897114
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1034,7 +1057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8914561293745881689
 RectTransform:
   m_ObjectHideFlags: 0

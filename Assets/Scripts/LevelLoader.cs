@@ -23,6 +23,15 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(waitSeconds);
         LoadNextScene();
     }
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Start Scene");
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex);
+    }
 
     public void LoadNextScene()
     {
