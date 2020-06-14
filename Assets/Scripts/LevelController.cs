@@ -57,5 +57,5 @@ public class LevelController : MonoBehaviour
         {
             spawner.StopSpawning();
         }
-    } 
+    }  
 }

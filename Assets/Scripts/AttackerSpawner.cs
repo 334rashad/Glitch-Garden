@@ -27,7 +27,7 @@ public class AttackerSpawner : MonoBehaviour
     {
         spawn = false;
     }
-
+ 
     private void SpawnAttacker()
     {
         var attackerIndex = UnityEngine.Random.Range(0, attackerTypeArray.Length);

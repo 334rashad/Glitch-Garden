@@ -51,7 +51,7 @@ public class Attacker : MonoBehaviour
         if (health)
         {
             health.DealDamage(damage);
-        }
+        } 
     }
 
 }
