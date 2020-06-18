@@ -18,7 +18,7 @@ public class AttackerSpawner : MonoBehaviour
     {
         while (spawn)
         {
-            yield return new WaitForSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay - PlayerPrefController.GetDifficulty()));
             SpawnAttacker();
         }
     }
