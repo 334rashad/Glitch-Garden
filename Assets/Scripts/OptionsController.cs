@@ -33,6 +33,7 @@ public class OptionsController : MonoBehaviour
 
     public void SetDefaultVolume()
     {
-        volumeSlider.value = defaultVolume;
+        volumeSlider.value = defaultVolume; 
     }
 }
+ 
