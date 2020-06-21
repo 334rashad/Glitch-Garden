@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject levelCompleteMenu;
-    [SerializeField] float waitToLoad = 3f;
+    [SerializeField] float waitToLoad = 2f;
     [SerializeField] GameObject gameOverMenu;
     int numberOfAttackers = 0;
     bool levelTimerFinished = false;

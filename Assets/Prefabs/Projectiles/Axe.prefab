@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootSpeed: 5.3
-  damage: 70
+  damage: 150
 --- !u!61 &445332635890318186
 BoxCollider2D:
   m_ObjectHideFlags: 0

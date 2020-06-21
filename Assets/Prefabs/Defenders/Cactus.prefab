@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c63a627807222459387b0542fe1fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCost: 30
+  coinCost: 45
 --- !u!114 &1204749142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad8615c0ca8acea4999c0cbebfa220c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 75
   destroyVFX: {fileID: 0}
 --- !u!1001 &5609306500706158627
 PrefabInstance:

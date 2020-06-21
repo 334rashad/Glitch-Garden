@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootSpeed: 5
-  damage: 35
+  damage: 50
 --- !u!58 &7532599520136070330
 CircleCollider2D:
   m_ObjectHideFlags: 0
