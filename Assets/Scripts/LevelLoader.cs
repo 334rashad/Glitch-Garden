@@ -10,7 +10,7 @@ public class LevelLoader : MonoBehaviour
     int currentSceneIndex;
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
